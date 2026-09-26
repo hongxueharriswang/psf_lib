@@ -1,0 +1,15 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CITATION.cff
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include SECURITY.md
+include pyproject.toml
+include requirements.txt
+include requirements-dev.txt
+recursive-include psf py.typed
+recursive-include docs *.md
+recursive-include examples *.py
+recursive-include tests *.py
+global-exclude *.pyc __pycache__ .DS_Store

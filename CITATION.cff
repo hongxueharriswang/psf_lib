@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "PSF: A Python Library for the Persistence-State Framework"
+abstract: >
+  A Python library for distinguishing temporary stop-out from permanent attrition
+  in self-paced online learning. Implements the Persistence-State Framework (PSF)
+  with Hidden Markov Models, Dynamic Bayesian Networks, survival analysis, and
+  event history analysis.
+authors:
+  - family-names: "Wang"
+    given-names: "Harris"
+    email: "harrisw@athabascau.ca"
+    affiliation: "Athabasca University"
+version: 0.1.0
+date-released: "2025-01-15"
+license: MIT
+repository-code: "https://github.com/hongxueharriswang/psf_lib"
+url: "https://hongxueharriswang.github.io/psf_lib/"
+keywords:
+  - "learning analytics"
+  - "student persistence"
+  - "stop-out"
+  - "attrition"
+  - "hidden Markov model"
+  - "self-paced learning"
+  - "distance education"
+preferred-citation:
+  type: software
+  title: "PSF: A Python Library for the Persistence-State Framework"
+  authors:
+    - family-names: "Wang"
+      given-names: "Harris"
+  version: 0.1.0
+  date-released: "2025-01-15"
+  license: MIT

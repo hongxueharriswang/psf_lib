@@ -1,0 +1,51 @@
+=== PSF Simulation Study ===
+
+True model:
+PSFModel(K=6, D=6, n_params=92)
+
+[1] Simulating cohort...
+    Simulated 400 students; mean duration = 18.4
+
+[2] Fitting model via Baum-Welch...
+[EM] iter   1  log-lik = -52161.4418
+[EM] iter   2  log-lik = -44141.9205
+[EM] iter   3  log-lik = -42876.2173
+[EM] iter   4  log-lik = -42001.6310
+[EM] iter   5  log-lik = -41641.6139
+[EM] iter   6  log-lik = -41516.4426
+[EM] iter   7  log-lik = -41462.4485
+[EM] iter   8  log-lik = -41433.7799
+[EM] iter   9  log-lik = -41415.7356
+[EM] iter  10  log-lik = -41404.4562
+[EM] iter  11  log-lik = -41397.6332
+[EM] iter  12  log-lik = -41392.9211
+[EM] iter  13  log-lik = -41389.3373
+[EM] iter  14  log-lik = -41386.4981
+[EM] iter  15  log-lik = -41384.1978
+[EM] iter  16  log-lik = -41382.2429
+[EM] iter  17  log-lik = -41380.4246
+[EM] iter  18  log-lik = -41378.5261
+[EM] iter  19  log-lik = -41376.3434
+[EM] iter  20  log-lik = -41373.7254
+[EM] iter  21  log-lik = -41370.5736
+[EM] iter  22  log-lik = -41366.7841
+[EM] iter  23  log-lik = -41362.4548
+[EM] iter  24  log-lik = -41358.5318
+[EM] iter  25  log-lik = -41355.8429
+[EM] iter  26  log-lik = -41354.3621
+[EM] iter  27  log-lik = -41353.6417
+[EM] iter  28  log-lik = -41353.2737
+[EM] iter  29  log-lik = -41353.0866
+[EM] iter  30  log-lik = -41352.9954
+
+[3] Evaluating state-recovery accuracy...
+    Joint-state accuracy: 0.859
+
+[4] Comparing to baselines...
+
+                       auc  pr_auc  brier  accuracy  precision  recall    f1   tpr   fpr   tp  fp   fn   tn
+model                                                                                                      
+PSF (fitted)         0.761   0.851  0.361     0.605      0.966   0.351 0.515 0.351 0.019   84   3  155  158
+Inactivity threshold 0.500   0.598  0.598     0.403      0.000   0.000 0.000 0.000 0.000    0   0  239  161
+Logistic regression  0.913   0.937  0.118     0.838      0.854   0.879 0.866 0.879 0.224  210  36   29  125
+Survival (no intent) 0.350   0.501  0.593     0.403      0.000   0.000 0.000 0.000 0.000    0   0  239  161
